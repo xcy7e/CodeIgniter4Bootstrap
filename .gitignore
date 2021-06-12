@@ -84,6 +84,7 @@ phpunit
 # Composer
 #-------------------------
 vendor/
+!**/assets/vendor
 
 #-------------------------
 # IDE / Development Files
@@ -104,6 +105,8 @@ nbproject/
 build/
 nbbuild/
 dist/
+!**/vendor/*/dist
+!**/vendor/*/build
 nbdist/
 nbactions.xml
 nb-configuration.xml
