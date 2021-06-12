@@ -23,7 +23,7 @@ class App extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $baseURL = 'http://localhost/gitdash/public/';
+	public $baseURL = 'http://localhost/cibs/public/';
 
 	/**
 	 * --------------------------------------------------------------------------
