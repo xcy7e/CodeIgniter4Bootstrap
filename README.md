@@ -17,7 +17,7 @@ Blueprint for new PHP Web-Applications bundled with frameworks you use every tim
 <h1 align="center">How to use</h1>
 
 
-### 1. Set your default template
+### 1. Choose template
 
 ### :memo: BaseController
 ```php
