@@ -31,7 +31,7 @@ $this->bootstrapTemplate = 'dashboard';  // change template on-the-fly
 
 ### 2. Folder structure
 
-PHP files:
+:memo: PHP files:
 > Template chunks
 ```lex
 app/Views/templates/_TEMPL_/head.php       // <html><head>
@@ -41,7 +41,7 @@ app/Views/templates/_TEMPL_/main.php       // optional content <main>
 app/Views/templates/_TEMPL_/footer.php     // <footer></html>
 ```
 
-CSS- and JS-files:
+:memo: CSS- and JS-files:
 > global scripts
 ```vb
 public/assets/css/style.css   // global CSS-file
