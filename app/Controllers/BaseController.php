@@ -37,7 +37,7 @@ class BaseController extends Controller
      * light | dark
      * @var string
      */
-    public $bootstrapTheme = 'light';
+    public $bootstrapTheme = 'dark';
 
 	/**
 	 * Instance of the main Request object.
@@ -86,16 +86,22 @@ class BaseController extends Controller
         $data['content'] =  view($page, $data);
 
         // template chunks:
+
+        // head <head>
         echo view('templates/'.$this->bootstrapTemplate.'/head', $data);
-        // optional sidebar
+        // sidebar <nav>
         if (is_file(APPPATH.'/Views/templates/'.$this->bootstrapTemplate.'/sidebar.php')) {
-            echo view('templates/'.$this->bootstrapTemplate.'sidebar', $data);
+            echo view('templates/'.$this->bootstrapTemplate.'/sidebar', $data);
         }
-        // optional navigation
+        // navigation <header>
         if (is_file(APPPATH.'/Views/templates/'.$this->bootstrapTemplate.'/nav.php')) {
             echo view('templates/'.$this->bootstrapTemplate.'/nav', $data);
         }
-        echo view('templates/'.$this->bootstrapTemplate.'/main', $data);
+        // content <main>
+        if (is_file(APPPATH.'/Views/templates/'.$this->bootstrapTemplate.'/main.php')) {
+            echo view('templates/'.$this->bootstrapTemplate.'/main', $data);
+        }
+        // footer <footer>
         echo view('templates/'.$this->bootstrapTemplate.'/footer', $data);
     }
 }
