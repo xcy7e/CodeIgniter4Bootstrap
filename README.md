@@ -36,7 +36,7 @@ $this->bootstrapTemplate = 'dashboard';  // change template on-the-fly
 ```lex
 app/Views/templates/_TEMPL_/head.php       // <html><head>
 app/Views/templates/_TEMPL_/sidebar.php    // optional sidebar <nav>
-app/Views/templates/_TEMPL_/nav.php        // optional header <nav>
+app/Views/templates/_TEMPL_/nav.php        // optional header <header>
 app/Views/templates/_TEMPL_/main.php       // optional content <main>
 app/Views/templates/_TEMPL_/footer.php     // <footer></html>
 ```
