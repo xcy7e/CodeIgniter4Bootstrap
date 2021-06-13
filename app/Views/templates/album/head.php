@@ -21,15 +21,23 @@
     <!-- Bootstrap 5.0.1 CSS -->
     <link rel="stylesheet" href="<?=base_url('assets/vendor/bootstrap-5.0.1/dist/css/bootstrap.css')?>" type="text/css">
 
-    <!-- album template css -->
+    <!-- album template CSS -->
     <link rel="stylesheet" href="<?=base_url('assets/templates/album/css/style.album.css')?>" type="text/css">
-    <!-- album template js -->
+    <!-- album template JS -->
     <script type="text/javascript" src="<?=base_url('assets/templates/album/js/script.album.js')?>"></script>
 
+    <?php if(isset($navbar_css) && $navbar_css==true): ?>
+    <!-- individual navigation CSS -->
+    <link rel="stylesheet" href="<?=base_url('assets/sections/navigation/css/nav_'.$navbar.'.css')?>" type="text/css">
+    <?php endif; ?>
+    <?php if(isset($navbar_js) && $navbar_js==true): ?>
+    <!-- individual navigation JS -->
+    <script type="text/javascript" src="<?=base_url('assets/sections/navigation/js/nav_'.$navbar.'.js')?>"></script>
+    <?php endif; ?>
 
-    <!-- global custom css -->
+    <!-- global custom CSS -->
     <link rel="stylesheet" href="<?=base_url('assets/css/style.css')?>" type="text/css">
-    <!-- global custom js -->
+    <!-- global custom JS -->
     <script type="text/javascript" src="<?=base_url('assets/js/script.js')?>"></script>
 </head>
 <body>

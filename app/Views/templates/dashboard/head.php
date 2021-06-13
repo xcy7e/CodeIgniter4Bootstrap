@@ -27,6 +27,14 @@
     <!-- dashboard template css -->
     <link rel="stylesheet" href="<?=base_url('assets/templates/dashboard/css/style.dashboard.css')?>" type="text/css">
 
+    <?php if(isset($navbar_css) && $navbar_css==true): ?>
+        <!-- individual navigation CSS -->
+        <link rel="stylesheet" href="<?=base_url('assets/sections/navigation/css/nav_'.$navbar.'.css')?>" type="text/css">
+    <?php endif; ?>
+    <?php if(isset($navbar_js) && $navbar_js==true): ?>
+        <!-- individual navigation JS -->
+        <script type="text/javascript" src="<?=base_url('assets/sections/navigation/js/nav_'.$navbar.'.js')?>"></script>
+    <?php endif; ?>
 
     <!-- global custom css -->
     <link rel="stylesheet" href="<?=base_url('assets/css/style.css')?>" type="text/css">
