@@ -106,8 +106,10 @@ class BaseController extends Controller
         $data['content'] =  view($page, $data);
 
         $data['navbar'] = $this->bootstrapNav;
-        $data['navbar_css'] = in_array('css',$this->bootstrapNavScripts[$this->bootstrapNav]);
-        $data['navbar_js'] = in_array('js',$this->bootstrapNavScripts[$this->bootstrapNav]);
+        if($this->bootstrapNav != 'default') {
+            $data['navbar_css'] = in_array('css',$this->bootstrapNavScripts[$this->bootstrapNav]);
+            $data['navbar_js'] = in_array('js',$this->bootstrapNavScripts[$this->bootstrapNav]);
+        }
 
         // template chunks:
 
