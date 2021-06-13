@@ -105,8 +105,9 @@ nbproject/
 build/
 nbbuild/
 dist/
-!**/vendor/*/dist
-!**/vendor/*/build
+!**/vendor/*/*/dist
+!**/vendor/*/*/build
+!**/vendor/*/*/scss/vendor
 nbdist/
 nbactions.xml
 nb-configuration.xml

@@ -1,7 +1,7 @@
 <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <div class="row">
         <div class="col-12 col-md">
-            <img class="mb-2" src="assets/vendor/bootstrap-5.0.1/site/static/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
+            <img class="mb-2" src="assets/vendor/bootstrap/bootstrap-5.0.1/site/static/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
             <small class="d-block mb-3 text-muted">&copy; 2017–2021</small>
         </div>
         <div class="col-6 col-md">
@@ -38,7 +38,7 @@
 </div>
 
 <!-- Bootstrap 5.0.1 JS -->
-<script type="text/javascript" src="<?=base_url('assets/vendor/bootstrap-5.0.1/dist/js/bootstrap.bundle.js');?>"></script>
+<script type="text/javascript" src="<?=base_url('assets/vendor/bootstrap/bootstrap-5.0.1/dist/js/bootstrap.bundle.js');?>"></script>
 
 </body>
 </html>

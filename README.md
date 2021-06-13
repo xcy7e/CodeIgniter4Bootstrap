@@ -2,15 +2,17 @@
 
 Blueprint for new PHP Web-Applications bundled with frameworks you use every time anyway! Configured and set up to start coding your actual project right away.
 
-:abacus: `Codeigniter 4` with `Bootstrap v5` & `jQuery v3.6`
+:abacus: `Codeigniter 4` with `Bootstrap v5` `jQuery v3.6` `Font-Awesome v5.15` `Chart.js v2.9` `Datatables v1.10` `jQuery-Easing v1.4` `jQuery-UI v1.12` 
 
-###### Bundled with lots of Bootstrap example templates to start with or later change on-the-fly (**login-screen**, **dashboard**, ..) <br>Properly prepared with all files you need to start coding the concept you got in mind and save you time you might otherwise waste on that initial overhead bringing together the frameworks you love.
+###### Bundled with lots of Bootstrap templates to start with or change later on-the-fly!<br>Properly prepared with all files you need to start coding the concept you got in mind and save you time you might otherwise waste on that initial overhead bringing together the frameworks you love.
 
 ---------
 
-## Bootstrap-templates
+## Bootstrap Templates
 
  `Album` `Pricing` `Checkout` `Product` `Cover` `Carousel` `Blog` `Dashboard` `Sign-In` `Sticky-Footer` `Sticky-Footer-Nav` `Jumbotron`
+<br><br>
+`SB Admin 2`
 
 <br><br>
 
@@ -76,10 +78,10 @@ You can easily add your own individual navigation following this rules.<br>If yo
 ```c
 public $bootstrapNavScripts["NAVNAME"] = ['css','js'];  // your nav uses css and js
 ```
-> these scripts are added automatically in your templates `<head>`
+> .. then this scripts are added automatically in your template: `<head>`
 ```lex
-public/assets/sections/navigation/css/nav_NAVNAME.css   // add this CSS-file if defined in $bootstrapNavScripts
-public/assets/sections/navigation/js/nav_NAVNAME.js     // add this JS-file if defined in $bootstrapNavScripts
+public/assets/sections/navigation/css/nav_NAVNAME.css
+public/assets/sections/navigation/js/nav_NAVNAME.js
 ```
 
 <h1 align="center"> </h1>

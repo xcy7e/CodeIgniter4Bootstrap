@@ -16,10 +16,10 @@
     <link rel="shortcut icon" href="<?=base_url('favicon.ico')?>">
 
     <!-- jQuery 3.6.0 -->
-    <script type="text/javascript" src="<?=base_url('assets/vendor/jquery-3.6.0/jquery-3.6.0.min.js')?>"></script>
+    <script type="text/javascript" src="<?=base_url('assets/vendor/jquery/jquery-3.6.0/jquery-3.6.0.min.js')?>"></script>
 
     <!-- Bootstrap 5.0.1 CSS -->
-    <link rel="stylesheet" href="<?=base_url('assets/vendor/bootstrap-5.0.1/dist/css/bootstrap.css')?>" type="text/css">
+    <link rel="stylesheet" href="<?=base_url('assets/vendor/bootstrap/bootstrap-5.0.1/dist/css/bootstrap.css')?>" type="text/css">
 
     <!-- pricing template css -->
     <link rel="stylesheet" href="<?=base_url('assets/templates/pricing/css/style.pricing.css')?>" type="text/css">
