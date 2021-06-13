@@ -1,19 +1,21 @@
-# :beginner: CodeIgniter4Bootstrap
+<h1 align="center"> :beginner: CodeIgniter4Bootstrap</h1>
 
-Blueprint for new PHP Web-Applications bundled with frameworks you use every time anyway! Configured and set up to start coding your actual project right away.
+<p align="center">Blueprint for new PHP Web-Applications bundled with popular frameworks!<br>Pre-configured to start coding your actual project right away.</p>
 
-:abacus: `Codeigniter 4`<br>with `Bootstrap v5` `jQuery v3.6` & `Font-Awesome v5.15` `Chart.js v2.9` `Datatables v1.10` `jQuery-Easing v1.4` `jQuery-UI v1.12` 
+### :diamond_shape_with_a_dot_inside: `Codeigniter 4`
+#####  :heavy_plus_sign: `Bootstrap` `jQuery` `Font-Awesome` `Chart.js` `Datatables` `jQuery-Easing` `jQuery-UI` 
 
-###### Bundled with lots of Bootstrap templates to start with or change later on-the-fly!<br>Properly prepared with all files you need to start coding the concept you got in mind and save you time you might otherwise waste on that initial overhead bringing together the frameworks you love.
+###### Bundled with many Bootstrap templates!<br>Properly prepared with all files you need to start coding the concept you got in mind and save you time you might otherwise waste on that initial overhead bringing together the frameworks you love.
 
 ---------
 
 ## Bootstrap Templates
 
- `Album` `Pricing` `Checkout` `Product` `Cover` `Carousel` `Blog` `Dashboard` `Sign-In` `Sticky-Footer` `Sticky-Footer-Nav` `Jumbotron`
+[Bootstrap example templates:](https://getbootstrap.com/docs/5.0/examples/)<br>
+`Album` `Pricing` `Checkout` `Product` `Cover` `Carousel` `Blog` `Dashboard` `Sign-In` `Sticky-Footer` `Sticky-Footer-Nav` `Jumbotron`
 <br><br>
+[Free templates:](https://startbootstrap.com/)<br>
 `SB Admin 2`
-
 <br><br>
 
 <h1 align="center">How to use</h1>
@@ -37,24 +39,23 @@ $this->bootstrapTemplate = 'dashboard';  // change template on-the-fly
 > Template chunks
 ```lex
 app/Views/templates/_TEMPL_/head.php       // <html><head>
-app/Views/templates/_TEMPL_/sidebar.php    // optional sidebar <nav>
-app/Views/templates/_TEMPL_/nav.php        // optional header <nav>
-app/Views/templates/_TEMPL_/main.php       // optional content <main>
+app/Views/templates/_TEMPL_/sidebar.php    // sidebar <nav> (optional)
+app/Views/templates/_TEMPL_/nav.php        // header <nav> (optional)
+app/Views/templates/_TEMPL_/main.php       // content <main> (optional)
 app/Views/templates/_TEMPL_/footer.php     // <footer></html>
 ```
 
 **CSS- & JS files:**
-> global scripts
-```lex
-public/assets/css/style.css   // global CSS-file
-public/assets/js/script.js    // global JS-file
-```
 > template scripts
 ```lex
 public/assets/templates/_TEMPL_/css/style._TEMPL_.css   // template CSS-file
 public/assets/templates/_TEMPL_/js/script._TEMPL_.js    // template JS-file
 ```
-
+> global scripts
+```lex
+public/assets/css/style.css   // global CSS-file
+public/assets/js/script.js    // global JS-file
+```
 
 <br>
 
@@ -62,7 +63,7 @@ public/assets/templates/_TEMPL_/js/script._TEMPL_.js    // template JS-file
 Some templates have their own navigation. You can override the default navigation or change it for a specific view on-the-fly.
 ### BaseController
 ```c
-public $bootstrapNav = 'top_static';  // set default navigation
+public $bootstrapNav = 'top_static';  // change default navigation
 ```
 > or in any controller
 ```c
