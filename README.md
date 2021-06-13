@@ -2,7 +2,7 @@
 
 Blueprint for new PHP Web-Applications bundled with frameworks you use every time anyway! Configured and set up to start coding your actual project right away.
 
-:abacus: `Codeigniter 4` with `Bootstrap v5` `jQuery v3.6` `Font-Awesome v5.15` `Chart.js v2.9` `Datatables v1.10` `jQuery-Easing v1.4` `jQuery-UI v1.12` 
+:abacus: `Codeigniter 4`<br>with `Bootstrap v5` `jQuery v3.6` & `Font-Awesome v5.15` `Chart.js v2.9` `Datatables v1.10` `jQuery-Easing v1.4` `jQuery-UI v1.12` 
 
 ###### Bundled with lots of Bootstrap templates to start with or change later on-the-fly!<br>Properly prepared with all files you need to start coding the concept you got in mind and save you time you might otherwise waste on that initial overhead bringing together the frameworks you love.
 
