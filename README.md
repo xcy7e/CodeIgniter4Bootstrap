@@ -53,7 +53,33 @@ public/assets/templates/_TEMPL_/css/style._TEMPL_.css   // template CSS-file
 public/assets/templates/_TEMPL_/js/script._TEMPL_.js    // template JS-file
 ```
 
+
+<br>
+
+## 3. Individual Navigation
+Some templates have their own navigation. You can override the default navigation or change it for a specific view on-the-fly.
+### BaseController
+```c
+public $bootstrapNav = 'top_static';  // set default navigation
+```
+> or in any controller
+```c
+$this->bootstrapNav = 'top_static';  // change navigation on-the-fly
+```
+> this includes the navigation section
+```lex
+app/Views/sections/navigation/nav_top_static.php   // add nav_NAVNAME.php to add your own individual navigation
+```
+
+You can easily add your own individual navigation following this rules.<br>If you add your own nav you can specify if it uses additional CSS or JS:
+### BaseController
+```c
+public $bootstrapNavScripts["NAVNAME"] = ['css','js'];  // your nav uses css and js
+```
+> these scripts are added automatically in your templates `<head>`
+```lex
+public/assets/sections/navigation/css/nav_NAVNAME.css   // add this CSS-file if defined in $bootstrapNavScripts
+public/assets/sections/navigation/js/nav_NAVNAME.js     // add this JS-file if defined in $bootstrapNavScripts
+```
+
 <h1 align="center"> </h1>
-
-
-
