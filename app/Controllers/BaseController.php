@@ -26,7 +26,8 @@ class BaseController extends Controller
      * Bootstrap template to render
      * Override on the fly to change render path
      * possible values:
-     * album | pricing | checkout
+     * Bootstrap-Example Templates: album | blog | carousel | checkout | cover | dashboard | jumbotron | pricing | product | signin | stickyfooter | stickyfooternav
+     * Other Templates: sbadmin2
      * @var string
      */
     public $bootstrapTemplate = 'album';
@@ -50,7 +51,7 @@ class BaseController extends Controller
 
     /**
      * Bootstrap navigation bar individual scripts to load
-     * Define additional scripts to load for an individual navigation bar
+     * Define if css|js should load automatically for an individual navigation
      * @var \string[][]
      */
     public $bootstrapNavScripts = array(
