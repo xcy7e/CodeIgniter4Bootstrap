@@ -39,6 +39,26 @@ class BaseController extends Controller
      */
     public $bootstrapTheme = 'dark';
 
+    /**
+     * Bootstrap navigation bar
+     * Override to change navigation (default uses template navigation if it exists)
+     * possible values:
+     * default | top_static | top_fixed | bottom
+     * @var string
+     */
+    public $bootstrapNav = 'default';
+
+    /**
+     * Bootstrap navigation bar individual scripts to load
+     * Define additional scripts to load for an individual navigation bar
+     * @var \string[][]
+     */
+    public $bootstrapNavScripts = array(
+        'top_static' => ['css'],
+        'top_fixed' => ['css'],
+        'bottom' => ['css']
+    );
+
 	/**
 	 * Instance of the main Request object.
 	 *
@@ -85,6 +105,10 @@ class BaseController extends Controller
         $data['theme'] = $this->bootstrapTheme;
         $data['content'] =  view($page, $data);
 
+        $data['navbar'] = $this->bootstrapNav;
+        $data['navbar_css'] = in_array('css',$this->bootstrapNavScripts[$this->bootstrapNav]);
+        $data['navbar_js'] = in_array('js',$this->bootstrapNavScripts[$this->bootstrapNav]);
+
         // template chunks:
 
         // head <head>
@@ -93,9 +117,18 @@ class BaseController extends Controller
         if (is_file(APPPATH.'/Views/templates/'.$this->bootstrapTemplate.'/sidebar.php')) {
             echo view('templates/'.$this->bootstrapTemplate.'/sidebar', $data);
         }
-        // navigation <header>
-        if (is_file(APPPATH.'/Views/templates/'.$this->bootstrapTemplate.'/nav.php')) {
-            echo view('templates/'.$this->bootstrapTemplate.'/nav', $data);
+        // navigation <nav>
+        if($this->bootstrapNav == 'default') {
+            if (is_file(APPPATH.'/Views/templates/'.$this->bootstrapTemplate.'/nav.php')) {
+                echo view('templates/'.$this->bootstrapTemplate.'/nav', $data);
+            }
+        } else {
+            if (is_file(APPPATH.'/Views/sections/navigation/nav_'.$this->bootstrapNav.'.php')) {
+                echo view('sections/navigation/nav_'.$this->bootstrapNav, $data);
+            } else {
+                // Individual navigation file does not exist
+                throw new \CodeIgniter\Exceptions\PageNotFoundException('sections/navigation/nav_'.$this->bootstrapNav.'.php');
+            }
         }
         // content <main>
         if (is_file(APPPATH.'/Views/templates/'.$this->bootstrapTemplate.'/main.php')) {
