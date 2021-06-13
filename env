@@ -20,11 +20,11 @@ CI_ENVIRONMENT = development
 # APP
 #--------------------------------------------------------------------
 
-app.baseURL = 'http://dev.xcy7e.de/'
+app.baseURL = 'localhost'
 # app.forceGlobalSecureRequests = false
 
 # app.sessionDriver = 'CodeIgniter\Session\Handlers\FileHandler'
-app.sessionCookieName = 'x7.dev_session'
+app.sessionCookieName = 'dev_session'
 # app.sessionExpiration = 7200
 # app.sessionSavePath = NULL
 # app.sessionMatchIP = false
