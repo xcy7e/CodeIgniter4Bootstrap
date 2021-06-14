@@ -12,7 +12,7 @@ Blueprint for new PHP Web-Applications bundled with frameworks you use every tim
 
  `Album` `Pricing` `Checkout` `Product` `Cover` `Carousel` `Blog` `Dashboard` `Sign-In` `Sticky-Footer` `Sticky-Footer-Nav` `Jumbotron`
 <br><br>
-`SB Admin 2`
+`SB Admin 2` `Resume`
 
 <br><br>
 
