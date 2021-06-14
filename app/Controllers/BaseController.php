@@ -30,7 +30,7 @@ class BaseController extends Controller
      * Other Templates: sbadmin2
      * @var string
      */
-    public $bootstrapTemplate = 'album';
+    public $bootstrapTemplate = 'dashboard';
 
     /**
      * Bootstrap theme
